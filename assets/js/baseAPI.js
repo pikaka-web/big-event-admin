@@ -10,7 +10,7 @@ $.ajaxPrefilter(function(options) {
   if (options.url.indexOf('/my/') !== -1) {
     options.headers = {
       Authorization: localStorage.getItem('token') || ''
-    }
+    } 
   }
 
   // 全局统一挂载 complete 回调函数
